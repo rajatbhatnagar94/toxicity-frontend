@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CommentThread from './Components/CommentThread'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <img src={"/reddit-logo.png"} className="App-logo" alt="reddit-logo" />
+          <h2>Welcome to Reddit Toxic Comment Classifier</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="sixteen wide column rendered-example views-comment-types-comment-example-comment" style={ { "padding": "2rem"} }>
+          <CommentThread />
+        </div>
       </div>
     );
   }
