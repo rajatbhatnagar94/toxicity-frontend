@@ -30,9 +30,10 @@ class CardsContainer extends React.Component {
         this.fetchComments(params);
     }
     filter(comment_id) {
-        console.log("yp", comment_id);
-        let data = this.state.data.filter(item => item.reddit_identifier !== comment_id)
-        console.log(data)
+        let data = this.state.data.filter(item => {
+            console.log(item.reddit_identifier);
+            return item.reddit_identifier !== comment_id
+        });
         this.setState({
             data
         })
@@ -50,19 +51,14 @@ class CardsContainer extends React.Component {
             user_action: 'toxic',
             id: comment_id
         }
-        this.setState({
-            loading: true,
-            data: []
-        })
         axios
         .post(url_update, params)
         .then(response => {
             this.filter(comment_id);
+            window.open(url, "_blank");
         })
-        window.open(url, "_blank");
     }
     onNonToxicClick(comment_id) {
-        console.log(comment_id)
         let url = `${config.webserver_url}/update/action`;
         let params = {
             user_action: 'non_toxic',
