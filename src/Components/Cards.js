@@ -19,10 +19,10 @@ const Cards = (props) => {
       <Card.Content extra>
         <div className='ui two buttons'>
           <Button basic color='red' onClick={props.onToxicClick.bind(null, props.reddit_identifier, props.comment_url)}>
-            Toxic
+           Delete 
           </Button>
           <Button basic color='green' onClick={props.onNonToxicClick.bind(null, props.reddit_identifier)}>
-            Non Toxic
+            Not Toxic
           </Button>
         </div>
       </Card.Content>
