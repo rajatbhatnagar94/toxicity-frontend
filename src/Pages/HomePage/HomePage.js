@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './HomePage.css';
-import Cards from '../../Components/Cards'
+import CardsContainer from '../../Components/CardsContainer'
 import GetToxicity from '../../Components/GetToxicity'
-import { Grid, Header,Divider, Segment } from 'semantic-ui-react';
+import { Grid, Header } from 'semantic-ui-react';
 
 class HomePage extends Component {
   render() {
@@ -10,7 +10,7 @@ class HomePage extends Component {
       <div className="home-container">
         <Grid stackable>
           <Grid.Column width={11}>
-            <Cards />
+            <CardsContainer />
           </Grid.Column>
           <Grid.Column width={5}>
             <Header></Header>

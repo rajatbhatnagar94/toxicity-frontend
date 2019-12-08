@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Header, Label, Icon, Dimmer, Loader } from 'semantic-ui-react'
+import { Button, Form, Header, Label, Icon } from 'semantic-ui-react'
 import axios from 'axios';
 import config from '../config';
 
@@ -50,8 +50,8 @@ class GetToxicity extends React.Component {
   }
   render() {
    return (
-    <Form textAlign="center">
-      <Header as='h2' content='Learn More'>
+    <Form>
+      <Header as='h2'>
         <Icon name='binoculars' />
         <Header.Content>
           Curious?
