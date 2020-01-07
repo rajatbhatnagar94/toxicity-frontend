@@ -13,9 +13,9 @@ class HomePage extends Component {
           <Grid.Column width={5}>
             <DisplayLinks />
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column width={7}>
           </Grid.Column>
-          <Grid.Column width={5}>
+          <Grid.Column width={4}>
             <Header></Header>
             <GetToxicity />
           </Grid.Column>

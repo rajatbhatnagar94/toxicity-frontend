@@ -10,10 +10,10 @@ class HomePage extends Component {
     return (
       <div className="home-container">
         <Grid stackable>
-          <Grid.Column width={11}>
+          <Grid.Column width={12}>
             <CardsContainer subreddit_name={this.props.match.params.subreddit_name} />
           </Grid.Column>
-          <Grid.Column width={5}>
+          <Grid.Column width={4}>
             <Header></Header>
             <GetToxicity />
           </Grid.Column>
