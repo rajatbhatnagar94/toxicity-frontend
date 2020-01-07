@@ -24,7 +24,7 @@ class CardsContainer extends React.Component {
     }
     componentDidMount() {
         let params = {
-            'subreddit': 'explainlikeimfive',
+            'subreddit': this.props.subreddit_name,
             'limit': 100
         };
         this.fetchComments(params);
@@ -38,8 +38,9 @@ class CardsContainer extends React.Component {
             data
         })
         if (data.length == 0) {
+            // 'explainlikeimfive'
             let params = {
-                'subreddit': 'explainlikeimfive',
+                'subreddit': this.props.subreddit_name,
                 'limit': 100
             };
             this.fetchComments(params);
