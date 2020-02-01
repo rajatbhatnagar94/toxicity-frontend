@@ -37,7 +37,7 @@ class CardsContainer extends React.Component {
         this.setState({
             data
         })
-        if (data.length == 0) {
+        if (data.length === 0) {
             // 'explainlikeimfive'
             let params = {
                 'subreddit': this.props.subreddit_name,

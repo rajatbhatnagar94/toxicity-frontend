@@ -8,7 +8,7 @@ const CardLoader = (props) => {
         <Card.Content className={"card-holder"}>
             <Loader active />
             <Image src={"https://react.semantic-ui.com/images/wireframe/short-paragraph.png"}/>
-            <Image src={"https://react.semantic-ui.com/images/wireframe/short-paragraph.png"} className= {"loader-image"} />
+            <Image src={"https://react.semantic-ui.com/images/wireframe/short-paragraph.png"} className={"loader-image"} />
             <Image src={"https://react.semantic-ui.com/images/wireframe/short-paragraph.png"} className={"loader-image"} />
         </Card.Content>
         </Card>

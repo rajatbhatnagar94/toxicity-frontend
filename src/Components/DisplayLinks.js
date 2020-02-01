@@ -6,7 +6,7 @@ const DisplayLinks = () => {
     <div className="ui divided items">
         <div className="item">
             <div className="ui tiny image">
-                <img src="/eli5-logo.png" />
+                <img alt="eli5 logo" src="/eli5-logo.png" />
             </div>
             <div className="content">
                 <Link to={"/classify/explainlikeimfive"} className="header">Explain like im five</Link>
@@ -17,7 +17,7 @@ const DisplayLinks = () => {
         </div>
         <div className="item">
             <div className="ui tiny image">
-                <img src="/cmv-logo.png" />
+                <img alt="cmv logo" src="/cmv-logo.png" />
             </div>
             <div className="content">
                 <Link to={"/classify/changemyview"} className="header">Change My View</Link>
